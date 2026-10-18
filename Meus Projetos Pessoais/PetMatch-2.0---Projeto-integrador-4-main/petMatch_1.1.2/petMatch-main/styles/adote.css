@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: be_vietnam-Medium;
+    src: url(../assets/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: anuphan;
+    src: url(../assets/fonts/Anuphan/static/Anuphan-Medium.ttf);
+}
+
+@font-face {
+    font-family: basker;
+    src: url(../assets/fonts/Baskervville/Baskervville-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: basker_light;
+    src: url(../assets/fonts/Baskervville/static/Baskervville-Medium.ttf);
+}
+
+body {
+    background-color: #fff8f1;
+}
+
+/* NAV DESKTOP */
+
+.nav-computador {
+    background-color: rgba(242, 235, 218, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: -17px;
+    width: 150px;
+}
+
+.nav-bar {
+    font-weight: bold;
+    height: 90px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    font-family: be_vietnam-Medium;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-right: 80px;
+}
+
+.pages a {
+    color: rgba(84, 105, 84, 1);
+}
+
+.pages a:hover {
+    color: rgb(223, 190, 24);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(115, 157, 113, 1);
+    border-radius: 50%;
+}
+
+.perfil:hover {
+    background-color: rgb(223, 190, 24);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.perfil-img {
+    width: 30px;
+    height: 30px;
+}
+
+/* NAV MOBILE */
+
+.nav-mobile {
+    display: none;
+}
+
+/* TÍTULO */
+
+.titulo {
+    font-size: 40px;
+    color: rgba(84, 105, 84, 1);
+    font-family: basker;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+/* CARDS */
+
+.pets {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: be_vietnam-Medium;
+    gap: 20px;
+    border: 2px solid rgb(129, 153, 124);
+}
+
+.fotoPet {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.nome {
+    color: rgba(65, 90, 63, 1);
+}
+
+.bio {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.informacoes {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.venhaConhecer {
+    padding: 10px;
+    font-size: 18px;
+    background: none;
+    border: 3px solid rgba(84, 105, 84, 1);
+    border-radius: 20px;
+    margin-top: 20px;
+    color: rgba(84, 105, 84, 1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.venhaConhecer:hover {
+    transform: scale(1.05);
+    background-color: rgb(143, 188, 141);
+    border-color: rgb(143, 188, 141);
+    color: #fff;
+    transition: 0.4s;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(65, 90, 63, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: anuphan;
+    color: #fff;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+footer h1 {
+    width: min(500px, 100%);
+    text-align: center;
+}
+
+.logo-footer {
+    width: 300px;
+    position: relative;
+    top: 80px;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1100px) {
+    .pages {
+        gap: 45px;
+        margin-right: 40px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-computador {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 95px;
+        background-color: rgba(242, 235, 218, 1);
+        padding: 0 25px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .logo-mobile {
+        width: 120px;
+    }
+
+    .mobile-right {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .mobile-perfil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: rgba(115, 157, 113, 1);
+    }
+
+    .mobile-perfil .perfil-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgba(115, 157, 113, 1);
+        cursor: pointer;
+    }
+
+    #menu {
+        width: 25px;
+        height: 25px;
+    }
+
+    .mobile-links {
+        display: none;
+        position: absolute;
+        top: 95px;
+        right: 0;
+        width: 220px;
+        background-color: rgba(65, 90, 63, 1);
+        padding: 35px 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        z-index: 999;
+    }
+
+    .mobile-links a {
+        color: white;
+        font-size: 22px;
+        font-family: be_vietnam-Medium;
+        font-weight: bold;
+    }
+
+    .nav-mobile:hover .mobile-links {
+        display: flex;
+    }
+
+    .titulo {
+        font-size: 32px;
+        margin: 40px 20px 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer h1 {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .logo-footer {
+        width: 230px;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil administrador - petMatch</title>
+    <link rel="icon" href="../assets/img/petMatch.png">
+    <link rel="stylesheet" href="../styles/perfil-adm.css">
+</head>
+<body>
+    <header>
+        <div class="nav-computador">
+            <a href="../index.html">
+                <img class="logo" src="../assets/img/petMatch.png" alt="logo">
+            </a>
+            <div class="nav-bar">
+                <nav class="pages">
+                    <a href="../index.html">Início</a>
+                    <a href="../pages/adote.html">Adote</a>
+                    <a href="../pages/sobre.html">Sobre nós</a>
+                    <a href="../index.html#quadroAdocao">Como adotar</a>
+                </nav>
+                <a class="perfil" href="../pages/perfil-usuario.html">
+                    <img class="perfil-img" src="../assets/img/user.png" alt="user icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-mobile">
+            <div class="menu-mobile-logo">
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/petMatch.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="mobile-right">
+                <a class="perfil mobile-perfil" href="../pages/perfil-usuario.html">
+                    <img class="perfil-img" src="../assets/img/user.png" alt="">
+                </a>
+
+                <button class="menu">
+                    <img id="menu" src="../assets/img/menu.png" alt="">
+                </button>
+            </div>
+
+            <nav class="mobile-links">
+                <a href="../index.html">Início</a>
+                <a href="../pages/adote.html">Adote</a>
+                <a href="../pages/sobre.html">Sobre nós</a>
+                <a href="../index.html#quadroAdocao">Como adotar</a>
+            </nav>
+        </div></div>
+    </header>
+    <main>
+        <section class="pm-hero">
+            <h1>Painel da instituição</h1>
+            <p>Gerencie os dados da instituição e os pets cadastrados no petMatch.</p>
+        </section>
+
+        <section class="pm-container">
+            <div class="pm-grid">
+                <div class="pm-card">
+                    <h2>Dados da instituição</h2>
+                    <form class="pm-form">
+                        <div class="pm-campo"><label>Nome da instituição</label><input type="text" placeholder="Ex: Lar dos Pets"></div>
+                        <div class="pm-campo"><label>Nome do responsável</label><input type="text" placeholder="Pessoa que adiciona os pets"></div>
+                        <div class="pm-campo"><label>CNPJ</label><input type="text" placeholder="00.000.000/0000-00"></div>
+                        <div class="pm-campo"><label>Telefone</label><input type="tel" placeholder="(00) 00000-0000"></div>
+                        <div class="pm-botoes">
+                            <a class="pm-btn pm-link-sair" href="../pages/login.html">Sair da conta</a><button class="pm-btn" type="button">Salvar alterações</button></div>
+                    </form>
+                </div>
+
+                <div class="pm-card">
+                    <h2>Ações rápidas</h2>
+                    <div class="pm-info-lista">
+                        <div class="pm-info-item">Cadastre novos pets para adoção.</div>
+                        <div class="pm-info-item">Edite ou remova pets cadastrados.</div>
+                        <div class="pm-info-item">Visualize as informações antes de publicar.</div>
+                    </div>
+                    <div class="pm-botoes">
+                        <a class="pm-btn" href="../pages/adicionar-pet.html">Adicionar pet</a>
+                        <a class="pm-btn pm-btn-claro" href="../pages/gerenciar-pets.html">Gerenciar pets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img class="logo-footer" src="../assets/img/petMatch.png" alt="">
+        <h1>Acreditamos que todo pet merece um lar e todo lar merece um pet.</h1>
+        <p>©2026 PetMatch. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

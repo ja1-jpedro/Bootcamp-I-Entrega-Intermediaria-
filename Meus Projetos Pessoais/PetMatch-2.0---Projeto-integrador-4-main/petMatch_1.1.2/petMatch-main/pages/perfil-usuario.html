@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do usuário - petMatch</title>
+    <link rel="icon" href="../assets/img/petMatch.png">
+    <link rel="stylesheet" href="../styles/perfil-usuario.css">
+</head>
+<body>
+    <header>
+        <div class="nav-computador">
+            <a href="../index.html">
+                <img class="logo" src="../assets/img/petMatch.png" alt="logo">
+            </a>
+            <div class="nav-bar">
+                <nav class="pages">
+                    <a href="../index.html">Início</a>
+                    <a href="../pages/adote.html">Adote</a>
+                    <a href="../pages/sobre.html">Sobre nós</a>
+                    <a href="../index.html#quadroAdocao">Como adotar</a>
+                </nav>
+                <a class="perfil" href="../pages/perfil-usuario.html">
+                    <img class="perfil-img" src="../assets/img/user.png" alt="user icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-mobile">
+            <div class="menu-mobile-logo">
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/petMatch.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="mobile-right">
+                <a class="perfil mobile-perfil" href="../pages/perfil-usuario.html">
+                    <img class="perfil-img" src="../assets/img/user.png" alt="">
+                </a>
+
+                <button class="menu">
+                    <img id="menu" src="../assets/img/menu.png" alt="">
+                </button>
+            </div>
+
+            <nav class="mobile-links">
+                <a href="../index.html">Início</a>
+                <a href="../pages/adote.html">Adote</a>
+                <a href="../pages/sobre.html">Sobre nós</a>
+                <a href="../index.html#quadroAdocao">Como adotar</a>
+            </nav>
+        </div></div>
+    </header>
+    <main>
+        <section class="pm-hero">
+            <h1>Meu perfil</h1>
+            <p>Altere seus dados de contato para facilitar o processo de adoção.</p>
+        </section>
+
+        <section class="pm-container">
+            <div class="pm-grid pm-grid-perfil">
+                <div class="pm-card">
+                    <h2>Dados pessoais</h2>
+                    <form class="pm-form">
+                        <div class="pm-campo"><label>Nome completo</label><input type="text" placeholder="Digite seu nome"></div>
+                        <div class="pm-campo"><label>E-mail</label><input type="email" placeholder="seuemail@gmail.com"></div>
+                        <div class="pm-campo"><label>Telefone</label><input type="tel" placeholder="(00) 00000-0000"></div>
+                        <div class="pm-botoes"><button class="pm-btn" type="button">Salvar alterações</button><a class="pm-btn pm-link-sair" href="../pages/login.html">Sair da conta</a></div>
+                    </form>
+                </div>
+
+                <div class="pm-card pm-card-destaque">
+                    <h2>Deseja doar um pet?</h2>
+                    <p>Se você representa uma instituição ou responsável autorizado, informe seu CNPJ para acessar a área de cadastro de pets.</p>
+                    <div class="pm-botoes">
+                        <a class="pm-btn pm-btn-claro" href="../pages/solicitar-cnpj.html">Quero doar um pet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img class="logo-footer" src="../assets/img/petMatch.png" alt="">
+        <h1>Acreditamos que todo pet merece um lar e todo lar merece um pet.</h1>
+        <p>©2026 PetMatch. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
